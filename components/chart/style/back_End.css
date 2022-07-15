@@ -1,0 +1,134 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+.body {
+    /* width: 1366px; */
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+}
+
+/* <!-- 左邊導覽列 (分頁共用) --> */
+
+
+
+/* 右邊區域  (分頁共用) */
+.right_Side {
+    /* display: inline-block; */
+    background-color: rgb(255, 255, 255);
+    width: 82%;
+    height: 100vh;
+    float: right;
+}
+
+
+/* <!-- 資料匯出按鈕 (分頁共用) --> */
+.export_Btn {
+    width: 100%;
+    text-align: right;
+    height: 90px;
+}
+
+.export_Btn button {
+    width: 135px;
+    height: 50px;
+    line-height: 50px;
+    margin: 50px 15px 0px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    /* background-color: rgb(165, 32, 32); */
+    background-color: rgb(75, 25, 90);
+    color: white;
+    border: none;
+}
+
+.export_Btn button:hover {
+    font-size: large;
+    background-color: rgb(196, 2, 2);
+    color: white;
+}
+
+
+/* <!-- 當前主題名稱 (分頁共用) --> */
+.title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0px 0px 50px 100px;
+    letter-spacing: 5px;
+}
+
+
+/* <!-- 搜尋區   ---->  搜尋條件選鍵  (分頁共用)     --> */
+.chart_Btn {
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: right;
+    box-shadow: 0 0 5px black;
+    margin: 5px 0px;
+}
+
+.chart_Btn a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0px 2px 3px black;
+}
+
+.chart_Btn span {
+    margin: 0px 0px 0px 30px;
+}
+
+.chart_Btn select {
+    margin: 0px 30px 0px 0px;
+    width: 100px;
+    height: 26px;
+    font-size: 14px;
+    }
+
+.chart_Btn a:hover {
+    background-color: rgb(49, 0, 88);
+    color: white;
+}
+
+.chart_Btn button {
+    margin: 0px 100px 0px 0px;
+    width: 50px;
+    height: 28px;
+    font-size: 14px;
+    box-shadow: 0px 1px 5px black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgb(75, 25, 90);
+    opacity: 0.8;
+    color: white;
+}
+
+.chart_Btn button:hover {
+    color: white;
+    opacity: 1;
+}
+
+
+/* <!-- 資料區域  ---- (分頁共用)      --> */
+.chart_menu {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.chart_item1 {
+    width: 970px;
+    height: 500px;
+    background-color: rgb(224, 222, 224);
+    margin: 50px auto;
+}

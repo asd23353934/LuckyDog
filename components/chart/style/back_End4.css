@@ -1,0 +1,374 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+.body {
+    /* width: 1366px; */
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    height: auto;
+}
+
+/* <!-- 左邊導覽列 (分頁共用) --> */
+.sideBar {
+    background: repeating-linear-gradient(rgb(224, 204, 217), rgba(143, 115, 139, 0.877), rgb(224, 204, 217));
+    /* display: inline-block; */
+    float: left;
+    max-width: 350px;
+    width: 18%;
+    height: 100vh;
+    position: fixed;
+}
+
+.sideBar div {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+
+.sideBar div a {
+    width: 100%;
+    /* display: inline-block; */
+    float: right;
+    margin: 1px 0px;
+    background-color: white;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    box-shadow: 0 0 5px rgb(216, 112, 181);
+}
+
+.sideBar div a:hover {
+    background-color: rgb(75, 25, 90);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px black;
+    font-size: large;
+}
+
+
+/* 右邊區域  (分頁共用) */
+.right_Side {
+    /* display: inline-block; */
+    background-color: rgb(255, 255, 255);
+    width: 82%;
+    height: 100vh;
+    float: right;
+}
+
+
+/* <!-- 資料匯出按鈕 (分頁共用) --> */
+.export_Btn {
+    width: 100%;
+    text-align: right;
+    height: 90px;
+}
+
+.export_Btn button {
+    width: 135px;
+    height: 50px;
+    line-height: 50px;
+    margin: 50px 15px 0px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    /* background-color: rgb(165, 32, 32); */
+    background-color: rgb(75, 25, 90);
+    color: white;
+    border: none;
+}
+
+.export_Btn button:hover {
+    font-size: large;
+    background-color: rgb(196, 2, 2);
+    color: white;
+}
+
+
+/* <!-- 當前主題名稱 (分頁共用) --> */
+.title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0px 0px 50px 100px;
+    letter-spacing: 5px;
+}
+
+
+/* <!-- 搜尋區   ---->  搜尋條件選鍵  (分頁共用)     --> */
+.chart_Btn {
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: right;
+    box-shadow: 0 0 5px black;
+    margin: 5px 0px;
+}
+
+.chart_Btn a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0px 2px 3px black;
+}
+
+.chart_Btn span {
+    margin: 0px 0px 0px 30px;
+}
+
+.chart_Btn select {
+    margin: 0px 30px 0px 0px;
+    width: 100px;
+    height: 26px;
+    font-size: 14px;
+    }
+
+.chart_Btn a:hover {
+    background-color: rgb(49, 0, 88);
+    color: white;
+}
+
+.chart_Btn button {
+    margin: 0px 100px 0px 0px;
+    width: 50px;
+    height: 28px;
+    font-size: 14px;
+    box-shadow: 0px 1px 5px black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgb(75, 25, 90);
+    opacity: 0.8;
+    color: white;
+}
+
+.chart_Btn button:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* <!-- 不同  開始1--> */
+.chart_Btn span:nth-of-type(1) {
+    float: left;
+    margin: 2px 0px 0px 100px;
+}
+
+.chart_Btn select:nth-of-type(1) {
+    float: left;
+    line-height: 50px;
+    height: 26px;
+    /* background-color: aqua; */
+    margin: 12px 0px 0px 10px;
+    width: 100px;
+}
+
+.chart_Btn select:nth-of-type(2) {
+    margin: 0px;
+    width: 150px;
+}
+
+.chart_Btn select:nth-of-type(3) {
+    margin: 0px;
+    width: 60px;
+}
+
+/* <!-- 不同  結束1--> */
+
+
+
+/* <!-- 資料區域  ----(分頁共用)      --> */
+.chart_menu {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.chart_item1 {
+    width: 970px;
+    height: 500px;
+    background-color: rgb(224, 222, 224);
+    margin: 50px auto;
+}
+
+
+/* <!-- 不同   開始2--> */
+
+/* <!-- 資料區域  -- 清單標題 (修改區/新增區共用)    --> */
+.chart_item1_title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 5%;
+    padding: 25px 0px 15px 0px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+
+
+.chart_item_content div {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.158);
+    font-size: 16px;
+}
+
+/* <!-- 資料區域  ---- 1.清單bar (修改區/新增區共用)  --> */
+.chart_item1_navbar {
+    margin: 15px 0px 15px 0px;
+}
+
+.chart_item1_navbar p {
+    margin: 0px 50px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    /* background-color: aquamarine; */
+}
+
+.chart_item_content .chart_item1_navbar p:nth-of-type(4) {
+    text-align: center;
+}
+
+.chart_item1_navbar p:nth-of-type(8) {
+    width: 110px;
+}
+
+/* <!-- 資料區域  ---- 2.清單內容 (修改區/新增區共用)   --> */
+.chart_item_content div:not(:nth-of-type(1)) {
+    margin: 2px 0px;
+}
+
+.chart_item_content div p {
+    margin: 5px 5px;
+    width: 50px;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    align-items: center;
+}
+
+.chart_item_content div p:nth-of-type(1) {
+    width: 110px;
+}
+
+.chart_item_content div p:nth-of-type(2) {
+    width: 120px;
+}
+
+.chart_item_content div p:nth-of-type(3) {
+    width: 120px;
+}
+
+.chart_item_content div p:nth-of-type(4) {
+    width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    overflow: hidden;
+    text-align: center;
+}
+
+.chart_item_content div p:nth-of-type(7) {
+    width: 120px;
+}
+
+.chart_item_content div p:nth-of-type(8) {
+    width: 120px;
+}
+
+.chart_item_content button {
+    background-color: rgb(173, 5, 5);
+    margin: 0px 5px;
+    width: 50px;
+    height: 25px;
+    border-radius: 6px;
+    border: 2px solid rgb(151, 16, 16);
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+}
+.chart_item_content div p {
+    width: 100px;
+    margin: 0 10px 0 10px;
+}
+.chart_item_content button:hover {
+    background-color: rgb(228, 22, 22);
+    font-size: 14px;
+    color: white;
+    border: none;
+}
+
+
+/* 修改按鈕 --->  點擊頁面 (修改區/新增區共用) */
+.chart_item1_list input,
+.chart_item1_list select {
+    width: 100%;
+    font-size: 14px;
+}
+
+.chart_item1_list p:nth-of-type(2) select {
+    width: 50%;
+    overflow-y: scroll;
+
+}
+
+.chart_item1_list p:nth-of-type(2) select option {
+    overflow-y: auto;
+}
+
+
+
+
+
+
+/* <!-- 資料區域  ---- 3.上一頁 下一頁 (修改區/新增區共用)   --> */
+.chart_item1 {
+    position: relative;
+}
+
+#before_Next_Btn {
+    /* position: absolute;
+    top: 800px;
+    left: 58%; */
+    margin: 0 auto;
+    background-color: none;
+}
+
+#before_Next_Btn button {
+    border: none;
+    margin: 0px 5px 5px 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+/* <!-- 資料區域 (新增區)   --> */
+.chart_item1_title button {
+    background-color: rgb(75, 25, 90);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgb(22, 22, 21);
+    position: absolute;
+    top: 23px;
+    right: 270px;
+}
+
+.chart_item1_title button:hover {
+    background-color: rgb(99, 13, 170);
+    color: white;
+}
+
+/* <!-- 不同   結束2--> */

@@ -1,0 +1,1270 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
+/* 以下修改 */
+
+
+body {
+    background-color: black;
+}
+
+
+/* 登入註冊        登入註冊 */
+
+.loadinout {
+    display: flex;
+    justify-content: right;
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.829), rgba(2, 2, 2, 0.877));
+
+}
+
+.loadinout a {
+    color: white;
+    font-size: 24px;
+    padding: 0px 10px;
+}
+
+
+/* <!-- 導覽列         導覽列--> */
+
+.logoDiv a img {
+    width: 300px;
+    height: 103px;
+    display: flex;
+    position: absolute;
+    top: -23px;
+    left: 0px;
+}
+
+.navBar {
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.877), rgb(13, 13, 13));
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.navBar ul {
+    list-style: none;
+}
+
+.navBar>div>ul>li {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    padding: 30px 70px 20px 70px;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+.navBar>div>ul>li:nth-of-type(3),
+.navBar>div>ul>li:nth-of-type(4) {
+    padding: 30px 40px 20px 30px;
+}
+
+.navBar div>ul>li:hover {
+    /* background: radial-gradient(circle farthest-side, rgb(49, 44, 53), rgb(2, 1, 7)); */
+    background-image: linear-gradient(to bottom, rgb(49, 44, 53), rgb(2, 1, 7));
+}
+
+.navBar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navMenu {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    width: 185px;
+    background-color: rgba(39, 39, 39, 0.767);
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px 0px 0px 0px;
+    display: none;
+}
+
+.navBar>div>ul>li:nth-of-type(3) .navMenu,
+.navBar>div>ul>li:nth-of-type(4) .navMenu {
+    position: absolute;
+    top: 75px;
+    left: -5px;
+    width: 155px;
+}
+
+.navMenu li {
+    padding: 10px 23px;
+    text-align: center;
+    font-size: 16px;
+    margin: 7px;
+    border-radius: 5px;
+}
+
+.navBar>div>ul>li:hover .navMenu {
+    display: block;
+}
+
+.navMenu li:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 0px 5px purple, 0px 0px 10px purple, 0px 0px 20px rgb(255, 0, 128), 0px 0px 30px purple;
+    box-shadow: 0px 0px 5px rgb(108, 31, 196), 0px 0px 10px rgb(108, 31, 196), 0px 0px 20px rgb(0, 132, 255), 0px 0px 30px rgb(108, 31, 196);
+
+}
+
+#menuBtn {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(94, 94, 94);
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.hamburger>span {
+    opacity: 0;
+}
+
+.hamburger::before {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: rgb(240, 21, 221);
+    position: absolute;
+    left: 4px;
+    box-shadow: 0px 8px 0px rgb(5, 5, 5), 0px -8px 0px yellow;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+
+
+/* 導覽列       RWD         導覽列*/
+
+@media screen and (max-width:1366px) {
+    .navBar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .logoDiv a img {
+        width: 120px;
+        height: 63px;
+        top: -20px;
+        left: 0px;
+    }
+
+    .navBar {
+        height: 45px;
+        width: 100%;
+    }
+
+    .navBar>div>ul>li {
+        font-size: 12px;
+        padding: 17px 25px 12px 25px;
+
+    }
+
+    .navBar>div>ul>li:nth-of-type(3),
+    .navBar>div>ul>li:nth-of-type(4) {
+        font-size: 8px;
+        padding: 17px 20px 12px 25px;
+    }
+
+    .navMenu {
+        width: 101px;
+        padding: 11px 0px 0px 0px;
+        top: 45px;
+        left: -20px;
+    }
+
+    .navBar>div>ul>li:nth-of-type(3) .navMenu,
+    .navBar>div>ul>li:nth-of-type(4) .navMenu {
+        top: 45px;
+        left: 0px;
+    }
+
+    .navMenu li {
+        padding: 5.5px 11px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 25px;
+        z-index: 5;
+    }
+
+    .logoDiv a img {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        top: 0px;
+        left: 70%;
+    }
+
+    .navBar {
+        height: 45px;
+        width: 100%;
+    }
+
+    .navBar>div>ul {
+        position: relative;
+        position: absolute;
+        top: 0px;
+        left: -40px;
+    }
+
+    .navBar>div>ul>li {
+        font-size: 12px;
+        padding: 17px 25px 12px 25px;
+        background-color: rgba(0, 0, 0, 0.726);
+        top: 45px;
+        left: -500px;
+        display: block;
+        width: 40vw;
+        font-size: 20px;
+    }
+
+    .navBar>div>ul>li:nth-of-type(3),
+    .navBar>div>ul>li:nth-of-type(4) {
+        font-size: 20px;
+        padding: 17px 20px 12px 25px;
+    }
+
+    .navMenu {
+        width: 100%;
+        padding: 11px 0px 0px 0px;
+        top: 0px;
+        left: 40vw;
+    }
+
+    .navBar>div>ul>li:nth-of-type(3) .navMenu,
+    .navBar>div>ul>li:nth-of-type(4) .navMenu {
+        top: 0px;
+        left: 40vw;
+    }
+
+    .navMenu li {
+        padding: 6px 11px;
+        font-size: 16px;
+    }
+
+    #menuBtn:checked~.navBar>div>ul>li {
+        left: 0%;
+    }
+
+}
+
+
+/* <!-- 輪播大圖         輪播大圖--> */
+
+#carouselExampleIndicators {
+    z-index: 0;
+}
+
+.carousel-inner div img {
+    width: 100%;
+}
+
+#carouselExampleIndicators {
+    background: radial-gradient(circle farthest-side, rgb(34, 1, 26), rgb(0, 0, 0));
+}
+
+
+/* <!-- 快速搜尋         快速搜尋 --> */
+
+.fastSearch_Fr {
+    height: 10vh;
+    height: 80px;
+    margin: 0 auto;
+    /* background-color: rgb(20, 20, 49); */
+    /* background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.829), rgba(2, 2, 2, 0.877)); */
+    /* background: radial-gradient(circle farthest-side, rgb(43, 3, 43), rgb(0, 0, 0)); */
+    background: radial-gradient(circle farthest-side, rgb(43, 4, 66), rgb(11, 1, 39));
+    color: wheat;
+    font-size: 20px;
+
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.fastSearch_title {
+    letter-spacing: calc(100vw/50);
+    font-size: calc(100vw/60);
+}
+
+.fastMovie select {
+    border: none;
+    opacity: 0.5;
+    width: 70%;
+}
+
+.fastDate select {
+    width: 55%;
+    opacity: 0.5;
+}
+
+.fastSearch_Btn button {
+    /* width: 75px; */
+    background: radial-gradient(circle farthest-side, rgb(43, 4, 66), rgb(11, 1, 39));
+    color: white;
+    font-size: calc(100vw/80);
+    border: none;
+    white-space: nowrap;
+    letter-spacing: calc(100vw/70);
+    border-radius: 50px;
+    padding: 0px 5%;
+    text-align: center;
+    box-shadow: 0px 0px 10px purple, 0px 0px 15px purple;
+}
+
+/* <!-- 強檔電影           強檔電影 --> */
+
+.movieHot img {
+    width: 100%;
+}
+
+.movieHot {
+    position: relative;
+}
+
+.movieHot_Content a p {
+    content: attr(data-movieHot);
+    font-size: calc(100vw/80);
+    letter-spacing: calc(100vw/200);
+    background-color: rgb(131, 4, 4);
+    /* transform: rotate(-5deg); */
+    color: white;
+    width: 13%;
+    text-align: center;
+    z-index: 1;
+}
+
+.movieHot_Content a img {
+    max-width: 15%;
+    box-shadow: 8px 8px 8px black;
+    -webkit-filter: brightness(1);
+}
+
+.movieHot_Content a:nth-of-type(1) img,
+.movieHot_Content a:nth-of-type(1) p {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.movieHot_Content a:nth-of-type(2) img,
+.movieHot_Content a:nth-of-type(2) p {
+    position: absolute;
+    top: 33%;
+    left: 30%;
+}
+
+.movieHot_Content a:nth-of-type(3) img,
+.movieHot_Content a:nth-of-type(3) p {
+    position: absolute;
+    top: 3%;
+    left: 52%;
+}
+
+.movieHot_Content a:nth-of-type(4) img,
+.movieHot_Content a:nth-of-type(4) p {
+    position: absolute;
+    top: 33%;
+    left: 72%;
+}
+
+.movieHot_Content a:nth-of-type(2) p {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+}
+
+.movieHot_Content a:nth-of-type(4) p {
+    position: absolute;
+    top: 90%;
+    left: 72%;
+}
+
+.movieHot_Date span {
+    color: white;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0.432);
+
+    font-style: oblique;
+    text-shadow: 0 0 0px wheat, 0 0 10px wheat;
+}
+
+.movieHot_Date span:nth-of-type(1) {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+
+.movieHot_Date span:nth-of-type(2) {
+    position: absolute;
+    top: 23%;
+    left: 32%;
+}
+
+.movieHot_Date span:nth-of-type(3) {
+    position: absolute;
+    top: 65%;
+    left: 56%;
+}
+
+.movieHot_Date span:nth-of-type(4) {
+    position: absolute;
+    top: 24%;
+    left: 76%;
+}
+
+.movieHot_Content img:hover {
+    -webkit-filter: brightness(1.3);
+    transform: scale(1.05);
+}
+
+
+/* <!-- 強檔電影       RWD      強檔電影 --> */
+@media screen and (max-width:1024px) {
+    .movieHot_Content a img {
+        width: 18%;
+    }
+
+    .movieHot_Content a:nth-of-type(1) img,
+    .movieHot_Content a:nth-of-type(1) p {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+    .movieHot_Content a:nth-of-type(2) img {
+        position: absolute;
+        top: 23%;
+        left: 30%;
+    }
+
+    .movieHot_Content a:nth-of-type(3) img,
+    .movieHot_Content a:nth-of-type(3) p {
+        position: absolute;
+        top: 5%;
+        left: 52%;
+    }
+
+    .movieHot_Content a:nth-of-type(4) img {
+        position: absolute;
+        top: 23%;
+        left: 72%;
+    }
+
+    .movieHot_Date span:nth-of-type(1) {
+        top: 82%;
+        left: 10%;
+    }
+
+    .movieHot_Date span:nth-of-type(2) {
+        top: 8%;
+        left: 32%;
+    }
+
+    .movieHot_Date span:nth-of-type(3) {
+        top: 78%;
+        left: 53%;
+    }
+
+    .movieHot_Date span:nth-of-type(4) {
+        top: 8%;
+        left: 75%;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .movieHot_Date span {
+        font-size: 24px;
+    }
+}
+
+
+/* <!-- 電影輪播            電影輪播--> */
+
+.movieCarousel {
+    background: radial-gradient(circle farthest-side, rgb(34, 1, 26), rgb(0, 0, 0));
+    padding: 50px 0px 0px 0px;
+}
+
+.jcarousel>ul>li {
+    position: relative;
+}
+
+/* <!-- 電影輪播     熱映/即將上映 按鈕       電影輪播--> */
+
+.movieCarousel_Btn {
+    background: radial-gradient(circle farthest-side, rgb(43, 4, 66), rgb(11, 1, 39));
+}
+
+.movieCarousel_Btn p {
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(91, 20, 119);
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+    justify-content: center;
+    margin: 15px 40px;
+    padding: 0px 0px 0px 12px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 10px;
+
+}
+
+.movieCarousel_Btn div:nth-of-type(1) p {
+    float: right;
+}
+
+.movieCarousel_Btn div:hover p {
+    background: radial-gradient(circle farthest-side, rgb(83, 7, 87), rgba(43, 4, 80, 0.822));
+    cursor: pointer;
+}
+
+
+/* <!-- 電影輪播     懸浮畫面 (次畫面)       電影輪播--> */
+
+.carousel_secondView {
+    position: absolute;
+    width: 680px;
+    top: 0px;
+    /* left: 250px; */
+    left: 0px;
+    left: 0px;
+    z-index: 2;
+    height: 400px;
+    display: none;
+}
+
+.carousel_secondView>div {
+    float: left;
+    height: 400px;
+    background-color: rgba(61, 61, 61, 0.863);
+}
+
+.carousel_secondView div:nth-of-type(1) {
+    width: 37%;
+    padding: 40px 35px;
+}
+
+.carousel_secondView div:nth-of-type(2) {
+    width: 63%;
+    padding: 60px 10px 60px 25px;
+}
+
+.carousel_secondView img {
+    width: 240px;
+    height: 320px;
+}
+
+.carousel_secondView p {
+    width: 90%;
+    color: white;
+    font-size: 14px;
+}
+
+.carousel_secondView p:first-child {
+    color: yellow;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+
+.carousel_secondView p:nth-of-type(2) {
+    color: yellow;
+    font-size: 14px;
+}
+
+.carousel_secondView p:nth-of-type(4) {
+    font-size: 14px;
+    margin: 0px 0px 5px 0px;
+}
+
+.carousel_secondView p:nth-of-type(5) {
+    font-size: 14px;
+    margin: 0px 0px 20px 0px;
+}
+
+.jcarousel>ul>li>a:hover~.carousel_secondView {
+    display: block;
+    pointer-events: none;
+}
+
+@media only screen and (max-width:760px) {
+
+    .carousel_secondView div:nth-of-type(1) {
+        display: none;
+        width: 50vh;
+    }
+
+
+}
+
+
+
+/* <!-- 人氣電影             人氣電影--> */
+
+.moviePopular {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.moviePopular>div {
+    /* background: rgb(58, 16, 44); */
+    background: radial-gradient(circle farthest-side, rgb(43, 3, 43), rgb(0, 0, 0));
+    color: aliceblue;
+}
+
+.moviePopular>div>div {
+    margin: 70px 0px;
+    padding: 0px;
+}
+
+.moviePopular>div>div:nth-of-type(2) {
+    background: rgba(255, 254, 254, 0.342);
+    padding: 5% 0px 0px 0px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.moviePopular img {
+    width: 100%;
+}
+
+.moviePopular_Text p:nth-of-type(1) a {
+    color: yellow;
+    font-size: 24px;
+}
+
+.moviePopular_Text p:nth-of-type(2) a {
+    color: yellow;
+    font-size: 16px;
+}
+
+.moviePopular_Text p:nth-of-type(2) {
+    margin: 0px 0px 5% 0px;
+}
+
+.moviePopular_Text p:nth-of-type(3) {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+
+.moviePopular_Text button {
+    margin: 5% 2% 0% 2%;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    line-height: 200%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+.moviePopular_Text button a {
+    color: black;
+
+}
+
+.moviePopular>div:nth-of-type(2) p {
+    color: white;
+    /* background-color:rgb(6, 1, 26); */
+    background-color: rgb(131, 4, 4);
+    transform: rotate(20deg);
+    width: 18%;
+    position: absolute;
+    top: 14%;
+    right: -1%;
+    text-align: center;
+    line-height: 250%;
+    font-size: 20px;
+}
+
+
+/* <!-- 人氣電影       RWD        人氣電影--> */
+
+@media screen and (max-width:1244px) {
+    .moviePopular_Text a {
+        font-size: 12px;
+    }
+
+    .moviePopular_Text p:nth-of-type(1) a {
+        font-size: 18px;
+    }
+
+    .moviePopular_Text p:nth-of-type(2) a {
+        font-size: 12px
+    }
+
+    .moviePopular_Text p:nth-of-type(3) {
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    .moviePopular_Text button {
+        margin: 10px 20px 10px 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .moviePopular>div>div:nth-of-type(1) {
+        margin: 70px 0px 0px 0px;
+    }
+
+    .moviePopular>div>div:nth-of-type(2) {
+        margin: 0px 0px 70px 0px;
+    }
+
+    .moviePopular_Text p:nth-of-type(1) {
+        font-size: 18px;
+    }
+
+    .moviePopular_Text p:nth-of-type(2) {
+        /* font-size: 12px; */
+    }
+
+
+    .moviePopular_Text p:nth-of-type(3) {
+        font-size: 12px;
+        line-height: 35px;
+    }
+
+    .moviePopular_Text button {
+        margin: 15px 20px 15px 20px;
+    }
+
+    .moviePopular>div:nth-of-type(2) p {
+        top: 65%;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .moviePopular>div:nth-of-type(2) p {
+        top: 60%;
+        width: 28%;
+    }
+}
+
+
+
+
+
+
+/* <!-- 隨機電影             隨機電影 --> */
+.movieRandom_Fr {
+    background: black;
+    padding: 80px 0px 100px 0px;
+    position: relative;
+}
+
+.movieRandom_title {
+    font-size: 28px;
+    color: white;
+    border: 2px solid white;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.movieRandom {
+
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 60px 0px 0px 0px;
+    max-width: 1140px;
+}
+
+.movieRandom div img {
+    width: 150px;
+    height: 200px;
+}
+
+/* <!-- 隨機電影       按鈕      隨機電影 --> */
+.movieRandom_Btn {
+    position: absolute;
+    top: 75%;
+    left: 45.8%;
+    
+}
+
+.movieRandom_Btn button {
+    border-radius: 15px;
+    width: 160px;
+    height: 60px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.068);
+    box-shadow: 0px 0px 10px rgb(255, 253, 255), 0px 0px 20px rgb(255, 255, 255), 0px 0px 35px purple;
+    position: relative;
+    display: flex;
+}
+
+.movieRandom_Btn>button>p {
+    color: rgb(255, 254, 254);
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 50px;
+   justify-content: center;
+   align-items: center;
+    margin: 0 auto;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+    z-index: 1 ;
+}
+
+.movieRandom_Btn>button:hover p {
+    letter-spacing: 3px;
+}
+
+.movieRandom_Btn>button::before {
+    content: "";
+    background-color: #f00;
+    width: 30px;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.movieRandom_Btn>button:hover::before {
+    bottom: 0px;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.movieRandom_Btn>button::after {
+    content: "";
+    background-color: #f00;
+    width: 30px;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.movieRandom_Btn>button:hover::after {
+    top: 0px;
+    height: 100%;
+    width: 70%;
+    border-radius: 30px;
+}
+
+.movieRandom_Btn button::before,
+.movieRandom_Btn button::after {
+    background: rgb(151, 16, 90);
+    box-shadow: 0px 0px 15px rgb(83, 7, 67), 0px 0px 20px rgb(119, 3, 67);
+}
+
+
+
+/* <!-- 隨機電影       主內容(右邊區域)      隨機電影 --> */
+
+.movieRandom_mainContent a img {
+    width: 270px;
+    height: 360px;
+    padding: 20px 0px 0px 0px;
+}
+
+.movieRandom_mainContent>div {
+    margin: 0 auto;
+    width: 270px;
+    border-bottom: 1px solid white;
+    padding: 0px 0px 60px 0px;
+    position: relative;
+}
+
+.movieRandom_mainContent>div>p {
+    float: left;
+}
+
+
+.movieRandom_mainContent div p:nth-of-type(1) {
+    margin: 20px 10px 10px 10px;
+    background-color: brown;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.movieRandom_mainContent div p:nth-of-type(2) {
+    margin: 20px 0px 10px 0px;
+    width: 30%;
+}
+
+#movieRandom_heartIcon {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 1;
+    padding: 5px 10px;
+}
+
+.movieRandom_mainContent>p {
+    width: 60%;
+    margin: 0 auto;
+    clear: both;
+}
+
+.movieRandom_mainContent>p:nth-of-type(1) {
+    font-size: 20px;
+    padding: 15px 0px 0px 0px;
+    color: yellow;
+}
+
+.movieRandom_mainContent>p:nth-of-type(2) {
+    font-size: 14px;
+}
+
+.movieRandom div img:hover {
+    -webkit-filter: brightness(1.2);
+}
+
+@media screen and (max-width:767px) {
+
+    .movieRandom_Btn {
+        position: absolute;
+        top: 48%;
+        left: 38%;
+    }
+
+    .movieRandom_mainContent a img {
+        margin: 80px 0px 0px 0px;
+ }
+}
+
+@media screen and (max-width:485px) {
+
+    .movieRandom_Btn {
+        position: absolute;
+        top: 56%;
+        left: 37%;
+    }
+ 
+}
+
+/* <!-- 最新公告           最新公告--> */
+
+.news_Fr {
+    /* background: rgb(44, 3, 44); */
+    background: radial-gradient(circle farthest-side, rgb(80, 8, 80), rgb(19, 1, 19));
+
+}
+
+.news {
+    color: white;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+.news>div {
+    background: black;
+    margin: 0px 18%;
+}
+
+.news>div>div {
+    justify-content: center;
+}
+
+.newsTitle p {
+    text-align: center;
+    line-height: 60px;
+    /* background-color: rgba(168, 161, 161, 0.479); */
+    width: 150px;
+    border: 2px solid white;
+    margin: 50px 0px 70px 0px;
+    font-size: 24px;
+}
+
+.newsContent {
+    align-items: center;
+}
+
+.newsContent div {
+    margin: 30px 0px 50px 0px;
+}
+
+.newsContent img {
+    width: 480px;
+    height: 270px;
+    -webkit-filter: brightness(1);
+}
+
+.newsContent img:hover {
+    -webkit-filter: brightness(1.1);
+}
+
+.newsContent div p:nth-of-type(1) {
+    width: 450px;
+    padding: 0px 0px 20px 0px;
+    font-size: 24px;
+}
+
+.newsContent div p:nth-of-type(1) a {
+    color: yellow;
+}
+
+.newsContent div p:nth-of-type(2) {
+    width: 450px;
+}
+
+.newsContent div:nth-of-type(odd) {
+    text-align: center;
+}
+
+.newsContent div:nth-of-type(1),
+.newsContent div:nth-of-type(2),
+.newsContent div:nth-of-type(5),
+.newsContent div:nth-of-type(6) {
+    right: 120px;
+}
+
+.newsContent div:nth-of-type(3),
+.newsContent div:nth-of-type(4),
+.newsContent div:nth-of-type(7),
+.newsContent div:nth-of-type(8) {
+    left: 120px;
+}
+
+.newsContent>div:nth-of-type(2),
+.newsContent>div:nth-of-type(6) {
+    padding: 0px 0px 0px 150px;
+
+}
+
+
+
+
+/* 最新公告  移至兩側            最新公告*/
+.newsContent div:nth-of-type(1),
+.newsContent div:nth-of-type(4),
+.newsContent div:nth-of-type(5),
+.newsContent div:nth-of-type(8) {
+    transform: translateX(-1200px);
+}
+
+.newsContent div:nth-of-type(2),
+.newsContent div:nth-of-type(3),
+.newsContent div:nth-of-type(6),
+.newsContent div:nth-of-type(7) {
+    transform: translateX(1200px);
+}
+
+
+/* 最新公告       回到原點 JS      最新公告*/
+
+#newsContent_Item1,
+#newsContent_Item2 {
+    transform: translate(0px);
+    transition-duration: 2s;
+}
+
+#newsContent_Item3,
+#newsContent_Item4 {
+    transform: translate(0px);
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
+
+#newsContent_Item5,
+#newsContent_Item6 {
+    transform: translate(0px);
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+#newsContent_Item7,
+#newsContent_Item8 {
+    transform: translate(0px);
+    transition-duration: 2s;
+    transition-delay: 1.5s;
+}
+
+/* 最新公告         RWD        最新公告  */
+
+@media screen and(max-width:992px) {
+
+    .newsContent>div:nth-of-type(1),
+    .newsContent>div:nth-of-type(2),
+    .newsContent>div:nth-of-type(5),
+    .newsContent>div:nth-of-type(6) {
+        right: 0px;
+        left: 0px;
+        margin: auto;
+    }
+
+    .newsContent>div:nth-of-type(3),
+    .newsContent>div:nth-of-type(4),
+    .newsContent>div:nth-of-type(7),
+    .newsContent>div:nth-of-type(8) {
+        right: 0px;
+        left: 0px;
+        margin: auto;
+    }
+
+    .newsContent>div:nth-of-type(2),
+    .newsContent>div:nth-of-type(4),
+    .newsContent>div:nth-of-type(6),
+    .newsContent>div:nth-of-type(8) {
+        margin: 20px 0px 35px 0px;
+    }
+
+    .newsContent div:nth-of-type(even) {
+        padding: 0px 80px;
+    }
+
+}
+
+
+/* <!-- 影城據點                 影城據點 --> */
+
+.movieCity_Fr {
+    background-color: black;
+}
+
+.movieCity {
+    /* height: 500px; */
+    /* padding: 50px 0px 0px 100px; */
+    padding: 50px 0px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.movieCity_title div {
+    padding: 0px;
+}
+
+.movieCity_title div p {
+    /* background-color: aquamarine; */
+    background-image: linear-gradient(to bottom, rgba(27, 27, 27, 0.829), rgba(2, 2, 2, 0.877));
+    line-height: 80px;
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    color: yellow;
+    font-size: 24px;
+}
+
+.movieCity_title div:not(:nth-of-type(2)):hover p {
+    background-color: rgb(252, 152, 2);
+}
+
+.movieCity_Content div:nth-of-type(2) div {
+    background: white;
+    text-align: center;
+    padding: 50px 5px 20px 5px;
+    border-bottom: 1px solid wheat;
+}
+
+.movieCity_Content img {
+    width: 100%;
+}
+
+.movieCity_Content div p {
+    color: rgb(0, 0, 0);
+}
+
+.movieCity_Content div div p:nth-of-type(1) {
+    margin: 25px 0px 15px 0px;
+}
+
+.movieCity_Content div div:hover img {
+    opacity: 0.8;
+}
+
+.movieCity_Content div div:hover p {
+    color: red;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* <!-- 頁尾                 頁尾 --> */
+
+.footer {
+    background: black;
+    margin: 50px 0px 0px 0px;
+    border-top: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+.footer div {
+    justify-content: center;
+    padding: 0px 0px 30px 0px;
+}
+
+.footer div a {
+    color: white;
+}
+
+.footer div p:hover a {
+    color: yellow;
+}
+
+.footer div p:first-of-type {
+    margin: 50px 0px 35px 0px;
+    font-size: 16px;
+}
+
+.footer div p:not(:first-child) {
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+.footer>div:nth-of-type(1) img {
+    width: 250px;
+    height: 100px;
+    margin: 50px 0px;
+}

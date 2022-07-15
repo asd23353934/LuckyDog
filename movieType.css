@@ -1,0 +1,128 @@
+#mvclass {
+    text-align: center;
+}
+
+/* 分類列 */
+
+#mvclass {
+    margin: 10px;
+    background-color: black;
+    width: auto;
+    height: 60px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    padding: 5px;
+}
+
+header ul {
+
+    margin: 10px;
+}
+
+header nav {
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+header li a {
+    display: inline;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header li a:hover {
+    color: aquamarine;
+}
+
+/* 卡片 */
+
+.mvbar {
+    /* background-color: black; */
+    width: auto;
+    height: 420px;
+    margin: 10px;
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    height: 380px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 電影名稱連結 */
+.mvname {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.855);
+
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.mvname a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.mvname>a:hover {
+    color: rgb(37, 20, 220);
+}
+
+/* 電影圖片 */
+img {
+    transition: .5s;
+}
+
+/* .card a {
+    object-fit: cover;
+} */
+
+.card:hover img {
+    transform: scale(1.2);
+
+}
+
+/* RWD */
+@media screen and (max-width:768px) {
+    .mvbar {
+        height: 168px
+    }
+
+    .card {
+        height: 152px;
+        width: 120px;
+        margin: 8px;
+    }
+
+    .mvname {
+        height: 20px;
+        padding: 6px;
+        text-align: center;
+    }
+
+    .mvname>a {
+        margin: 4px;
+        font-size: 1px;
+
+    }
+
+    .mvimg {
+        height: 152px;
+    }
+
+}

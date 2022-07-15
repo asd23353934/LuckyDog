@@ -1,0 +1,102 @@
+#movieSeatSection{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#movieSeatScreen{
+    width: 80%;
+    background-color: rgb(228, 222, 222);
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(110, 106, 106);
+    margin-bottom: 30px;
+}
+.movieSeatBlock{
+    height: 160px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+}
+.btnGroup{
+    margin: 15px;
+}
+#movieSeatBuy{
+    background-color: black;
+    
+    font-weight:bolder;
+    width: 80px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 90%;
+    border-radius: 5px;
+}
+.movieSeatBuyLink{
+    color: aliceblue;
+    display: flex;
+    font-size: 19px;
+    line-height: 40px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.movieSeatBuyLink:hover{
+    color: rgb(243, 224, 53);
+}
+.movieSeatBtnDiv{
+    display: flex;
+}
+.movieSeatBtn{
+    width: 35px;
+    height: 35px;
+    border: 0ch;
+    background-color: rgb(121, 119, 119);
+    border: 1px black solid;
+    color: aliceblue;
+    margin: 3px;
+}
+.movieSeatBtn:nth-child(5){
+    margin-right: 50px;
+}
+.movieSeatBtn:nth-child(15){
+    margin-right: 50px;
+}
+
+
+
+
+
+
+/* photosphere */
+
+.movieSeatViewBtn{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(151, 147, 142);
+    border: 0;
+    border-radius: 15px;
+    margin-left: 49%;
+    margin-top: 30px;
+}
+.reactPhotosphereBtn{
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+}
+
+
+
+@media screen and (max-width:963px){
+    .movieSeatBtn{
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+        
+    }
+}
+@media screen and (max-width:1200px){
+   
+}

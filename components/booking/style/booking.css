@@ -1,0 +1,793 @@
+html,
+body.body_color_2 {
+    background-color: #33383d;
+    color: #555;
+    font-family: "Microsoft JhengHei", 'Open Sans';
+    font-size: 13px;
+    font-weight: 400;
+    height: 100%;
+}
+
+.artboard {
+    background: #f0f0ed none repeat scroll 0 0;
+}
+
+.containersss.frontend.container_bgcolor {
+    background: #f0f0ed none repeat scroll 0 0;
+ 
+}
+
+.row1 {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.containersss.frontend .page-header_2 {
+    border-bottom: 10px solid #33383d;
+    width: 105.6%;
+    margin: 0 0 50px -35px;
+    /* margin: 10px 0px 8px;
+    padding: 0 15px 10px; */
+}
+
+.header_step {
+    width: 100%;
+    position: relative;
+}
+
+.powerwidget:before,
+.powerwidget:after,
+.powerwidget>div:before,
+.powerwidget>div:after,
+.inner-spacer:before,
+.inner-spacer:after,
+.powerwidget-editbox:before,
+.powerwidget-editbox:after,
+.clearfix:before,
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.containersss.frontend .orb-form {
+    padding: 15px;
+}
+
+.orb-form {
+    outline: none;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.wizard,
+.tabcontrol {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.orb-form *,
+.orb-form *:after,
+.orb-form *:before {
+    /* margin: 0; */
+    box-sizing: content-box;
+}
+
+.wizard>.steps {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.wizard>.steps .current a,
+.wizard>.steps .current a:hover,
+.wizard>.steps .current a:active {
+    background: #3b8dbd;
+    color: #fff;
+    cursor: default;
+}
+
+.wizard>.steps a,
+.wizard>.steps a:hover,
+.wizard>.steps a:active {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin: 0 5px 5px;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.wizard>.steps>ul>li,
+.wizard>.actions>ul>li {
+    float: left;
+}
+
+.wizard>.steps>ul>li {
+    width: 25%;
+}
+
+.wizard>.steps .current-info,
+.tabcontrol>.steps .current-info {
+    position: absolute;
+    left: -999em;
+}
+
+.wizard>.steps .number_2 {
+    display: block;
+    font-size: 3.6em;
+    font-weight: 700;
+    line-height: 37px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.wizard>.steps .disabled a,
+.wizard>.steps .disabled a:hover,
+.wizard>.steps .disabled a:active {
+    background: #dddddb;
+    color: #777;
+    cursor: default;
+}
+
+/*
+    Common 
+*/
+
+
+.wizard,
+.tabcontrol {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wizard a,
+.tabcontrol a {
+    outline: 0;
+}
+
+.wizard ul,
+.tabcontrol ul {
+    list-style: none ;
+    padding: 0;
+    margin: 0;
+}
+
+.wizard ul>li,
+.tabcontrol ul>li {
+    display: block;
+    padding: 0;
+}
+
+/* Accessibility */
+
+.wizard>.steps .current-info,
+.tabcontrol>.steps .current-info {
+    position: absolute;
+    left: -999em;
+}
+
+.wizard>.content>.title,
+.tabcontrol>.content>.title {
+    position: absolute;
+    left: -999em;
+}
+
+/*
+    Wizard
+*/
+
+
+.wizard>.steps {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.wizard.vertical>.steps {
+    display: inline;
+    float: left;
+    width: 30%;
+}
+
+.wizard>.steps .number {
+    font-size: 2em;
+    display: block;
+    font-weight: 700;
+}
+
+.wizard>.steps>ul>li {
+    width: 25%;
+}
+
+.wizard>.steps>ul>li,
+.wizard>.actions>ul>li {
+    float: left;
+    width: 132px;
+}
+
+.wizard.vertical>.steps>ul>li {
+    float: none;
+    width: 100%;
+}
+
+.wizard>.steps a,
+.wizard>.steps a:hover,
+.wizard>.steps a:active {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin: 0 5px 5px;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard>.steps .disabled a,
+.wizard>.steps .disabled a:hover,
+.wizard>.steps .disabled a:active {
+    background: #dddddb;
+    color: #777;
+    cursor: default;
+}
+
+.wizard>.steps .current a,
+.wizard>.steps .current a:hover,
+.wizard>.steps .current a:active {
+    background: #3b8dbd;
+    color: #fff;
+    cursor: default;
+}
+
+.wizard>.steps .done a,
+.wizard>.steps .done a:hover,
+.wizard>.steps .done a:active {
+    background: #82b964;
+    color: #fff;
+}
+
+/*Hidind Tab Number*/
+
+.wizard>.steps .done a .number,
+.wizard>.steps .done a:hover .number,
+.wizard>.steps .done a:active .number,
+.wizard>.steps .error a .number,
+.wizard>.steps .error a:hover .number,
+.wizard>.steps .error a:active .number {
+    color: #fff;
+    visibility: hidden
+}
+
+/*Show Done Tab*/
+
+.wizard>.steps .done a .number:after,
+.wizard>.steps .done a:hover .number:after,
+.wizard>.steps .done a:active .number:after {
+    font-family: 'FontAwesome';
+    content: "\f058";
+    display: inline-block;
+    margin-left: -20px;
+    visibility: visible
+}
+
+/*Show Error Tab*/
+
+
+.wizard>.steps .error a .number:after,
+.wizard>.steps .error a:hover .number:after,
+.wizard>.steps .error a:active .number:after {
+    font-family: 'FontAwesome';
+    content: "\f057";
+    display: inline-block;
+    margin-left: -20px;
+    visibility: visible
+}
+
+.wizard>.steps .error a,
+.wizard>.steps .error a:hover,
+.wizard>.steps .error a:active {
+    background: #d24d33;
+    color: #fff;
+}
+
+.wizard>.content {
+    display: block;
+    margin: 0.5em;
+    min-height: 200px;
+    position: relative;
+    width: auto;
+}
+
+.steps-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+
+.wizard>.content>.body {
+    float: left;
+    position: absolute;
+    width: 95%;
+
+    padding: 2.5%;
+}
+
+.wizard>.actions {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+.wizard>.actions>ul {
+    display: inline-block;
+    text-align: right;
+}
+
+.wizard>.actions>ul>li {
+    margin: 0 0.5em;
+}
+
+.wizard>.actions a,
+.wizard>.actions a:hover,
+.wizard>.actions a:active {
+    background: #2184be;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.wizard>.actions .disabled a,
+.wizard>.actions .disabled a:hover,
+.wizard>.actions .disabled a:active {
+    background: #eee;
+    color: #aaa;
+}
+
+.content_fixed {
+    width: 765px ;
+}
+
+.blog-post {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.cold-grey-btn,
+.bg-cold-grey,
+.powerwidget.cold-grey {
+    background-color: #535c58;
+}
+
+.powerwidget-ctrls .button-icon {
+    font-size: .9em;
+    color: #fff;
+    margin: 1px;
+}
+
+.powerwidget-ctrls .button-icon i {
+    width: 18px;
+    text-align: center;
+}
+
+.powerwidget .inner-spacer_2 {
+
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #fff;
+}
+
+div.pow1 {
+    padding: 5px 10px 213px 14px;
+}
+
+.containersss.frontend .orb-form header,
+.containersss.frontend .orb-form footer {
+    margin: 0px;
+}
+
+.orb-form .header_2 {
+    float: left;
+    letter-spacing: 0px;
+    padding: 10px;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #1AA0BD;
+}
+
+.containersss.frontend .orb-form header,
+.containersss.frontend .orb-form footer {
+    margin: 0px;
+}
+
+.orb-form .col-6_2 {
+    margin: 0 0 0 10px;
+    width: 98%;
+}
+
+.orb-form .col {
+    float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.orb-form section {
+    display: inline-block;
+    margin-bottom: 5px !important;
+    line-height: 38px;
+    font-size: 15px;
+}
+
+.orb-form .input,
+.orb-form .select,
+.orb-form .textarea,
+.orb-form .radio,
+.orb-form .checkbox,
+.orb-form .toggle,
+.orb-form .button {
+    position: relative;
+    display: block;
+}
+
+.orb-form .select i {
+    top: 14px !important;
+    height: 10px !important;
+}
+
+i {
+    font-style: italic;
+}
+
+.orb-form .col-6_2 {
+    margin: 0 0 0 10px;
+    width: 98%;
+}
+
+.orb-form .col {
+    float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    margin: 5px 10px 14px 158px;
+}
+
+.inbox-new-message {
+    position: relative;
+    background: #f1f1f1;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.inbox-new-message {
+    margin: 15px 0 11px !important;
+}
+
+.inbox-new-message:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #f1f1f1 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+.orb-form header.header_3 {
+    display: block;
+    letter-spacing: 0px;
+    padding: 0 0 10px;
+    border-bottom: 5px solid rgba(0, 0, 0, .1);
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #1AA0BD;
+}
+
+.table_2>thead>tr>th.th_move {
+    text-align: right;
+}
+
+.table_2>thead>tr>th {
+    background: #858689;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-right: 0px;
+    border-left: 0px;
+    font-weight: normal !important;
+}
+
+.table_2>thead>tr>th,
+.table_2>tbody>tr>th,
+.table_2>tfoot>tr>th,
+.table_2>thead>tr>td,
+.table_2>tbody>tr>td,
+.table_2>tfoot>tr>td {
+    padding: 10px 5px !important;
+    vertical-align: middle;
+    border-top: 1px solid #e2eae9 !important;
+    border-bottom: 1px solid #e2eae9 !important;
+}
+
+.form-control_2 {
+    background-color: #fff;
+    border: 2px solid #c0c2c7;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 13px;
+    padding: 3px 5px;
+    line-height: 13px;
+    transition: border-color 0.3s ease 0s;
+    width: 100%;
+    text-align: center;
+}
+
+.text-widget .distance_2 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+}
+
+.text-widget ul.list_bottom {
+    position: absolute;
+    left: 135px;
+    bottom: -7px;
+    font-size: 14px;
+}
+
+.text-widget header.header_3 {
+    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    color: #1aa0bd;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0 0 10px;
+}
+
+.text-widget ul.ticket_info {
+    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    padding: 5px 0 10px;
+    line-height: 1.6em;
+}
+
+/* *, ::after, ::before {
+    box-sizing: content-box;
+} */
+.text-widget>img {
+    float: left;
+    width: 120px;
+    height: 180px;
+    margin: 0 15px 0 0;
+}
+
+.text-widget.poster_cover {
+    height: 180px;
+    position: relative;
+}
+
+.text-widget {
+    margin-bottom: 20px;
+}
+
+.text-widget ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.text-widget ul dd {
+    display: inline-block;
+}
+
+dd {
+    margin-left: 0;
+}
+
+div.text {
+    color: black;
+    position: absolute;
+    top: 350px;
+    left: 1150px;
+    
+}
+
+div.text-2 {
+    position: relative;
+    top: -602px;
+    left: 873px;
+
+
+}
+
+div.text-3 {
+    position: relative;
+    top: -814px;
+    left: 774px;
+
+
+}
+
+div.text-5 {
+    position: relative;
+    top: -567px;
+    left: 873px;
+
+
+}
+
+ul.countries-demo,
+ul.tiny-stats {
+    list-style: none outside none;
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.laying_id {
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    border-bottom: 1px solid #CBD2B0;
+    border-top: 1px solid #CBD2B0;
+    display: block;
+    padding: 10px 15px 0;
+    background: #F2F3EB;
+}
+
+.col-sm-5 {
+    float: left;
+}
+
+.orb-form .form-group_2 {
+    margin-bottom: 15px !important;
+    font-size: 15px;
+}
+
+.laying_id_2 {
+    margin-bottom: 5px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    border-bottom: 1px solid #eee;
+    display: block;
+    padding: 10px 0px 10px;
+}
+
+.orb-form footer.verify_bt {
+    padding: 10px 10px 10px 0 !important;
+    font-weight: normal !important;
+}
+
+.btn-default {
+    color: #fff;
+    border: 0;
+    background-color: #c0c2c7;
+    border-color: #c0c2c7;
+}
+
+.callout-info-def:before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: block;
+    background: #fdc153;
+    border-radius: 50%;
+    color: #fff;
+    width: 42px;
+    text-align: center;
+    height: 42px;
+    font-size: 1.9em;
+    font-family: 'FontAwesome';
+    content: "\f0a2";
+}
+
+@media screen and (max-width: 768px) {
+
+    #wizard-s-0,
+    #wizard-s-1,
+    #wizard-s-2,
+    #wizard-s-3,
+    #wizard-s-4 {
+        width: 111px;
+    }
+
+    .h1,
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .number_2 {
+        font-size: 5px;
+    }
+
+    div.text {
+        position: relative;
+        top: -525px;
+        left: 455px;
+
+
+    }
+
+    .text-widget .distance_2 {
+        width: 300px;
+
+    }
+
+    .col-md-4 {
+        max-width: 100%;
+    }
+
+    .col-md-7 {
+        max-width: 83.333333%;
+        position: absolute;
+        top: -37px;
+        right: -80px;
+    }
+
+    .col-md-8 {
+        max-width: 60%;
+    }
+
+    .containersss.frontend .orb-form {
+        padding: 17px;
+    }
+}
+
+.box1 {
+    float: left;
+    color: green;
+
+}
+
+.box1>h3 {
+    margin: 0px 0px 0px 50px;
+}
+
+.box1>span {
+    margin: 0px 26px 0px 50px;
+}
+
+.box2 {
+    color: green;
+}
+
+.box2>h3 {
+    margin: 0px 0px 0px 50px;
+}
+
+.box2>span {
+    margin: 0px 26px 0px 50px;
+}

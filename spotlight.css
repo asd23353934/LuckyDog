@@ -1,0 +1,183 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+div#spotlight{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    background: black;
+    flex-direction: column;
+    z-index: -100;
+}
+/* Logo */
+#logo {
+    width: 15%;
+    position: absolute;
+    /* top: 300px; */
+    top: 85%;   
+    left: 42%;
+    /* animation: spotlight3 5s infinite;
+    background-clip: text;
+    -webkit-background-clip: text; */
+    /* z-index: -1; */
+    opacity: 0.8;
+
+}
+
+/* .logo::after {
+    background-image: url(./image/Logo/Logo2.jpg);
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 40%;
+    
+} */
+
+
+/* 文字 */
+
+.titleSpotlight,
+.titleSpotlight2,
+.titleSpotlight3,
+.titleSpotlight4 {
+    font-size: 120px;
+    letter-spacing: 3px;
+    /* color: rgb(15, 15, 15); */
+    color: rgb(56, 56, 56);
+  z-index: 100;
+  
+    position: relative;
+}
+
+/* title3  title4 在底層 */
+#titleSpotlight_Fr ,
+#titleSpotlight_Fr2 {
+    position: relative;
+}
+
+.titleSpotlight3 {
+    position: absolute;
+    z-index: 10;
+    top: 2%;
+    left: 0.5%;
+
+}
+
+.titleSpotlight2{
+    /* width: 100%; */
+    white-space:nowrap;
+}
+
+.titleSpotlight4 {
+    position: absolute;
+    z-index: 10;
+    top: 51%;
+    left: 35.0%;
+    /* width: 520px; */
+    width: 100%;
+    
+}
+
+.titleSpotlight4::after{
+    white-space:nowrap
+}
+
+.titleSpotlight2,
+.titleSpotlight4 {
+    font-size: 80px;
+    font-style: italic;
+}
+
+.titleSpotlight::after,
+.titleSpotlight2::after {
+    content: attr(data-spotlight);
+    /* white-space: pre; */
+    color: transparent;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: spotlight 5s infinite;
+    background-image: url(./image/colorful2.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-style: inherit;
+} 
+
+.titleSpotlight3::after,
+.titleSpotlight4::after {
+    content: attr(data-spotlight2);
+    color: transparent;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: spotlight2 5s infinite;
+    background-image: url(./image/colorful2.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-style: inherit;
+}
+
+/* 文字動畫特效 */
+
+@keyframes spotlight {
+
+    0% {
+        clip-path: ellipse(80px 80px at -10% 50%);
+        -webkit-clip-path: ellipse(80px 80px at -10% 50%);
+    }
+
+    50% {
+        clip-path: ellipse(80px 80px at 110% 50%);
+        -webkit-clip-path: ellipse(80px 80px at 110% 50%);
+    }
+
+    100% {
+        clip-path: ellipse(80px 80px at -10% 50%);
+        -webkit-clip-path: ellipse(80px 80px at -10% 50%);
+    }
+
+}
+
+@keyframes spotlight2 {
+
+    0% {
+        clip-path: ellipse(80px 80px at 110% 50%);
+        -webkit-clip-path: ellipse(80px 80px at 110% 50%);
+    }
+
+    50% {
+        clip-path: ellipse(80px 80px at 50% 50%);
+        -webkit-clip-path: ellipse(80px 80px at -10% 50%);
+    }
+
+    100% {
+        clip-path: ellipse(80px 80px at 110% 50%);
+        -webkit-clip-path: ellipse(80px 80px at 110% 50%);
+    }
+
+}
+
+
+
+/* @keyframes spotlight3 {
+    0% {
+        clip-path: ellipse(80px 80px at 0% 0%);
+        -webkit-clip-path: ellipse(80px 80px at 0% 0%);
+    }
+
+    50% {
+        clip-path: ellipse(80px 80px at 100% 100%);
+        -webkit-clip-path: ellipse(80px 80px at 100% 100%);
+    }
+
+    100% {
+        clip-path: ellipse(80px 80px at 0% 0%);
+        -webkit-clip-path: ellipse(80px 80px at 0% 0%);
+    }
+} */

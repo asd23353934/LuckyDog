@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body {
+    background-image: url(./image/northern-lights-g0b5a3a114_1920.jpg);
+} */
+
+/* 座位效果 */
+
+#area1,
+#area2 {
+    height: 288px;
+    width: 270px;
+    background-color: #E7D7E3;
+    border-radius: 5px;
+}
+
+#area3 {
+    height: 270px;
+    background-color: #E7D7E3;
+    width: 500px;
+    border-radius: 5px;
+}
+
+
+
+/* 座位效果 */
+
+#area1 input[type="checkbox"],
+#area2 input[type="checkbox"],
+#area3 input[type="checkbox"] {
+    display: none;
+}
+
+
+.seatBtn:hover {
+    background: #bbb;
+    color: #fff;
+}
+
+#area1 input:checked+.seatBtn,
+#area2 input:checked+.seatBtn,
+#area3 input:checked+.seatBtn {
+    background: #5e7380;
+    color: rgb(225, 23, 23);
+}
+
+
+
+.seatBtn {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    background: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+
+/* 區域效果 */
+#box {
+    background-color: #70626F;
+    width: auto;
+    height: 700px;
+    margin: 5% 5%;
+    position: relative;
+
+}
+
+
+#area1,
+#area2,
+#area3 {
+    display: inline-block;
+    margin-top: 3%;
+}
+
+#area1 {
+    margin-left: 20px;
+}
+
+#area3 {
+    margin-left: 50px;
+}
+
+#area2 {
+    margin-left: 50px;
+}
+
+
+/* 按鈕*/
+#nextStep {
+    border-radius: 10px;
+    /* background-color: #3A3AE7; */
+    background: linear-gradient(to right, rgb(17, 209, 219), rgb(98, 59, 223));
+    color: #CAFCEB;
+    padding: 3px;
+    border: none;
+
+}
+
+/* 按鈕效果 */
+
+#nextStep:active {
+    color: red;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+
+#nextStep a {
+    text-decoration: none;
+    color: #CAFCEB;
+}
+
+
+
+/* RWD */
+@media screen and (max-width:576px) {
+    #box {
+        height: 270px;
+    }
+
+    .ckb {
+        height: 76px;
+        width: 76px;
+    }
+
+    .seatBtn {
+        height: 14px;
+        width: 14px;
+        font-size: 2px;
+    }
+
+
+}

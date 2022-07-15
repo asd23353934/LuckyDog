@@ -1,0 +1,54 @@
+body{
+    overflow-x: hidden;
+}
+#loginSection {
+    height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px
+}
+#loginSection img{
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+}
+#loginBlock div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#loginBlock label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.64);
+    margin-right: 3vw;
+    font-size: 30px;
+    font-weight: 600;
+    height: 50px;
+    width: 90px;
+}
+
+#loginBlock input {
+    height: 50px;
+    width: 18vw;
+    font-size: 20px;
+    padding-left: 1vw;
+}
+
+#loginBlock button {
+    background-color: rgba(0, 133, 255, 1);
+    width: 110px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+}
